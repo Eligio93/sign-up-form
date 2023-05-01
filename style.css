@@ -1,124 +1,138 @@
-
-*{
+* {
     font-family: 'Roboto', sans-serif;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.main{
-    display:flex;
-    
-    
+
+.main {
+    display: flex;
+
+
 }
-.left{
-    width:45%;
-    height:100vh;
+
+.left {
+    width: 45%;
+    height: 100vh;
     background-image: url(/img/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.stripe{
-    color:blanchedalmond;
-    position:relative;
-    width:100%;
-    height:15%;
+.stripe {
+    color: blanchedalmond;
+    position: relative;
+    width: 100%;
+    height: 15%;
     background-color: #0b4141c5;
-    top:25%;
+    top: 25%;
 }
-.logo{
-    display:flex;
+
+.logo {
+    display: flex;
     height: 100%;
     justify-content: center;
     overflow: hidden;
-   
+
 }
-h1{
+
+h1 {
     align-self: center;
-    
+
 }
-img{
-    margin:5px;
+
+img {
+    margin: 5px;
 }
+
 /*starting right part*/
-.right{
+.right {
     display: flex;
     flex-direction: column;
-    background-color:#F5DEB3 ;
-    justify-content: center;
-    height:100vh;
-    width:70%;
-    box-shadow: -13px 0px 45px 0px rgba(0,0,0,0.97);
-   
-}
-.message, form, .cta{
-height:100%;
-    /* border: 1px solid black; */
-   padding:20px;
- 
-}
-.message{
     background-color: #F5DEB3;
-    color: #0b4141;
-    overflow:hidden ;
-    font-size: 20px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    height: 100vh;
+    width: 70%;
+    box-shadow: -13px 0px 45px 0px rgba(0, 0, 0, 0.97);
+
 }
-.message p:nth-child(2){
-    margin-top:20px;
-}
-/*starting form part*/
+
+.message,
 form{
     height: fit-content;
-    color:#0b4141;
-  
-  
+    
+    margin-left: 20px;
 
-    
 }
-legend{
-    
+
+.message {
+    background-color: #F5DEB3;
+    color: #0b4141;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+    margin-bottom: 30px;
+
 }
-fieldset{
-    display:flex;
+
+.message p:nth-child(2) {
+    margin-top: 20px;
+}
+
+/*starting form part*/
+form {
+    color: #0b4141;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    display: flex;
     align-items: center;
-    border:none;
+    border: none;
 }
-.firstdatas{
-    display:flex;
+
+.firstdatas {
+    display: flex;
     flex-direction: column;
-   
+    width:50%;
+    
+
 }
-.secondatas{
-    display:flex;
+
+.secondatas {
+    display: flex;
     flex-direction: column;
+    width:50%;
+
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-right: 50px;
+    margin-bottom: 10px;
+    height: 30px;
+    
  
 }
-label{
-    margin-bottom:5px;
-}
-input{
-    margin-right:50px;
-    margin-bottom:10px;
-   
-}
-form h2{
-    margin-bottom: 20px;;
-   
-}
-.cta{
+
+form h2 {
+    margin-bottom: 20px;
 
 }
-button{
+
+button {
     background-color: #B2AFA5;
-    width:200px;
-    height:40px;
+    width: 200px;
+    height: 40px;
     border-radius: 10px;
     color: #0b4141;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
+    margin-top:30px;
+    margin-bottom: 10px;
+    
 }
