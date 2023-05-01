@@ -1,6 +1,6 @@
 
 *{
-    font-family: 'Finger Paint', cursive;
+    font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -11,18 +11,13 @@
     
 }
 .left{
-    width:30%;
+    width:45%;
     height:100vh;
     background-image: url(/img/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.right{
-    background-color:#0b4141 ;
-    
-    height:100vh;
-    width:70%;
-}
+
 .stripe{
     color:blanchedalmond;
     position:relative;
@@ -49,20 +44,81 @@ img{
 .right{
     display: flex;
     flex-direction: column;
+    background-color:#F5DEB3 ;
+    justify-content: center;
+    height:100vh;
+    width:70%;
+    box-shadow: -13px 0px 45px 0px rgba(0,0,0,0.97);
+   
 }
 .message, form, .cta{
-    height:33.3%;
+height:100%;
     /* border: 1px solid black; */
-   margin-left:35px;
+   padding:20px;
+ 
 }
 .message{
-    color: blanchedalmond;
+    background-color: #F5DEB3;
+    color: #0b4141;
     overflow:hidden ;
-    font-size: 25px;
+    font-size: 20px;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .message p:nth-child(2){
     margin-top:20px;
+}
+/*starting form part*/
+form{
+    height: fit-content;
+    color:#0b4141;
+  
+  
+
+    
+}
+legend{
+    
+}
+fieldset{
+    display:flex;
+    align-items: center;
+    border:none;
+}
+.firstdatas{
+    display:flex;
+    flex-direction: column;
+   
+}
+.secondatas{
+    display:flex;
+    flex-direction: column;
+ 
+}
+label{
+    margin-bottom:5px;
+}
+input{
+    margin-right:50px;
+    margin-bottom:10px;
+   
+}
+form h2{
+    margin-bottom: 20px;;
+   
+}
+.cta{
+
+}
+button{
+    background-color: #B2AFA5;
+    width:200px;
+    height:40px;
+    border-radius: 10px;
+    color: #0b4141;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
 }
