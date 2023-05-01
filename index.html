@@ -47,7 +47,7 @@
                         <input type="email" name="mail" id="mail" placeholder="odinproject@form.com">
 
                         <label for="pssw">Password</label>
-                        <input type="password" name="password" id="pssw">
+                        <input type="password" name="password" id="pssw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
                 </div>
                 <div class="secondatas">
                 <label for="surname">Last Name</label>
@@ -57,7 +57,7 @@
                 <input type="tel" name="phone" id="phone" placeholder="0123456789">
 
                 <label for="conpssw">Confirm Password</label>
-                <input type="password" id="conpssw">
+                <input type="password" id="conpssw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
             </div>
             </fieldset>
 
