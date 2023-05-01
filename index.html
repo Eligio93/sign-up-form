@@ -54,7 +54,7 @@
                 <input type="text" name="last_name" id="surname" placeholder="Mario">
 
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" placeholder="0123456789">
+                <input type="tel" name="phone" id="phone" pattern="\d{10}" maxlength="10" placeholder="0123456789">
 
                 <label for="conpssw">Confirm Password</label>
                 <input type="password" id="conpssw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
