@@ -14,7 +14,7 @@
 .left {
     width: 45%;
     height: 100vh;
-    background-image: url(/img/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
+    background-image: url(img/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -87,6 +87,7 @@ form {
 
 fieldset {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border: none;
 }
@@ -114,9 +115,23 @@ input {
     margin-right: 50px;
     margin-bottom: 10px;
     height: 30px;
+    background-color: #c9b184;
+    padding: 10px;
+    color:#03353E;
+    font-size: 20px;
     
- 
+    border:none
 }
+input:focus{
+   outline-color: #0b4141;
+    
+}
+::placeholder{
+    color:#03353E;
+    font-size: 15px;
+}
+
+
 
 form h2 {
     margin-bottom: 20px;
@@ -124,11 +139,11 @@ form h2 {
 }
 
 button {
-    background-color: #B2AFA5;
+    background-color: #03353E;
     width: 200px;
     height: 40px;
     border-radius: 10px;
-    color: #0b4141;
+    color: white;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
