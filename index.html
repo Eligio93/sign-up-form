@@ -38,21 +38,21 @@
                 </p>
             </div>
 
-            <form action="" method="post">
+            <form action="" method="post" id="form">
                 <h2>Let's do this!</h2>
                 <fieldset>
 
                     <div class="firstdatas">
 
                         <label for="name">First Name*</label>
-                        <input type="text" name="name" id="name" placeholder="Mario" pattern="[a-zA-Z]+" required>
+                        <input type="text" name="name" id="name" placeholder="Mario" pattern="[a-zA-Z]+" title="Please enter a valid name. e.g.:John"required>
                         
-                        <label for="mail">Email*</label>
-                        <input type="email" name="mail" id="mail" placeholder="odinproject@form.com" required>
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" placeholder="odinproject@form.com" title="Please enter a valid email! example@gmail.com"required>
 
                         <label for="pssw1">Password*</label>
                         <input type="password" name="password" id="pssw1" required
-                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
+                            pattern="^(?=.*[a-z])(?=.*[A-Z]).+$">
                     </div>
                     <div class="secondatas">
                         <label for="surname">Last Name*</label>
@@ -65,13 +65,14 @@
 
                         <label for="pssw2">Confirm Password*</label>
                         <input type="password" id="pssw2" required
-                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
+                            pattern="^(?=.*[a-z])(?=.*[A-Z]).+$">
                     </div>
+                    <div class="error"></div>
                 </fieldset>
 
                 <div class="cta">
                     <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="">Log In</a></p>
+                    <p>Already have an account? <a href="#">Log In</a></p>
                 </div>
             </form>
 
