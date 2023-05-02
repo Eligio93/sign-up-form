@@ -12,4 +12,4 @@ The most difficult part anyway was to validate every single field. I try to cust
 I realize that building form in the right way is crucial for the user,and for who is collecting datas. 
 I definetly should keep an eye on the quality of the code and start to use general variable for CSS to keep track of the color's palette of the page. 
 ## Live Preview
-[Live Preview]((https://eligio93.github.io/sign-up-form/))
+[Live Preview](https://eligio93.github.io/sign-up-form/)
