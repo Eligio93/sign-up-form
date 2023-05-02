@@ -155,3 +155,10 @@ button:hover{
     color: #03353E;
     cursor:pointer;
 }
+a{
+    text-decoration: none;
+    color: #03353E;
+}
+a:hover{
+    text-decoration: underline;
+}
