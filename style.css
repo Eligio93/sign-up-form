@@ -7,8 +7,6 @@
 
 .main {
     display: flex;
-
-
 }
 
 .left {
@@ -57,9 +55,9 @@ img {
 }
 
 .message,
-form{
+form {
     height: fit-content;
-    
+
     margin-left: 20px;
 
 }
@@ -70,7 +68,7 @@ form{
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    margin-top:30px;
+    margin-top: 7%;
     margin-bottom: 30px;
 
 }
@@ -95,15 +93,15 @@ fieldset {
 .firstdatas {
     display: flex;
     flex-direction: column;
-    width:50%;
-    
+    width: 50%;
+
 
 }
 
 .secondatas {
     display: flex;
     flex-direction: column;
-    width:50%;
+    width: 50%;
 
 }
 
@@ -117,17 +115,18 @@ input {
     height: 30px;
     background-color: #c9b184;
     padding: 10px;
-    color:#03353E;
+    color: #03353E;
     font-size: 20px;
-    
-    border:none
+    border-radius: 10px;
+    border: none
 }
-input:focus{
-   outline-color: #0b4141;
-    
+
+input:focus {
+    outline-color: #0b4141;
+
 }
-::placeholder{
-    color:#03353E;
+::placeholder {
+    color: #03353E;
     font-size: 15px;
 }
 
@@ -147,7 +146,12 @@ button {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 10px;
-    
+
+}
+button:hover{
+    background-color: #c9b184;
+    color: #03353E;
+    cursor:pointer;
 }
