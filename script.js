@@ -77,15 +77,26 @@ const validPssw=document.getElementById("pssw1").addEventListener("blur",functio
     }
 })
 //password compare
+const checkSubmit=document.getElementById("form").addEventListener("submit",function(e){
 
+    let pssw1= document.getElementById("pssw1").value;
+    let pssw2=document.getElementById("pssw2").value;
+    if(pssw1==="" || pssw2===""){
+        e.preventDefault();
+        error.textContent="Fill the passwords Input";
+        error.style.color="red";
+        setTimeout(function(){
+            error.textContent="";
+        },2000) 
 
-//Password instructions
-// const psswInfo=document.getElementById("pssw1").addEventListener("focus",function(){
-//     error.textContent="Password must have";
-//     error.style.color="red"; 
-//     console.log(error.textContent)
-//     setTimeout(function(){
-//         error.textContent="";
-//     },1000) 
-
-// })
+    }else if(pssw1 !== pssw2){
+        e.preventDefault();
+        error.textContent="Passwords are not matching";
+        error.style.color="red";
+        setTimeout(function(){
+            error.textContent="";
+        },2000) 
+    }else if(pssw1===pssw2){
+        document.getElementById("form").submit();
+    }
+})
