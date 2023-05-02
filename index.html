@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,70 +8,78 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet"><title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
+
 <body>
     <div class="main">
         <div class="left">
             <div class="stripe">
                 <div class="logo">
-                  <img src="img/Turtle.png" alt="">
-                  <h1>Oceanside</h1>
+                    <img src="img/Turtle.png" alt="">
+                    <h1>Oceanside</h1>
                 </div>
             </div>
 
         </div>
         <div class="right">
             <div class="message">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.<br>
                     Sign up <em>now</em> to get started. <br>
-                    
+
                 <p> You <em>know</em> you want to!</p>
                 </p>
             </div>
-            
+
             <form action="" method="post">
-               <h2>Let's do this!</h2>
+                <h2>Let's do this!</h2>
                 <fieldset>
-                
-                <div class="firstdatas">
 
-                        <label for="name">First Name</label>
-                        <input type="text" name="name" id="name" placeholder="Mario">
+                    <div class="firstdatas">
 
-                        <label for="mail">Email</label>
-                        <input type="email" name="mail" id="mail" placeholder="odinproject@form.com">
+                        <label for="name">First Name*</label>
+                        <input type="text" name="name" id="name" placeholder="Mario" pattern="[a-zA-Z]+" required>
+                        
+                        <label for="mail">Email*</label>
+                        <input type="email" name="mail" id="mail" placeholder="odinproject@form.com" required>
 
-                        <label for="pssw1">Password</label>
-                        <input type="password" name="password" id="pssw1" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
+                        <label for="pssw1">Password*</label>
+                        <input type="password" name="password" id="pssw1" required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
+                    </div>
+                    <div class="secondatas">
+                        <label for="surname">Last Name*</label>
+                        <input type="text" name="last_name" id="surname" placeholder="Rossi" pattern="[a-zA-Z]+"
+                            required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" pattern="\d{10}" maxlength="10"
+                            placeholder="0123456789">
+
+                        <label for="pssw2">Confirm Password*</label>
+                        <input type="password" id="pssw2" required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
+                    </div>
+                </fieldset>
+
+                <div class="cta">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log In</a></p>
                 </div>
-                <div class="secondatas">
-                <label for="surname">Last Name</label>
-                <input type="text" name="last_name" id="surname" placeholder="Rossi">
-
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" pattern="\d{10}" maxlength="10" placeholder="0123456789">
-
-                <label for="pssw2">Confirm Password</label>
-                <input type="password" id="pssw2" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}\[\]:';'<>?,.\/])(?=.*[^\dA-Za-z]).{6,}">
-            </div>
-            </fieldset>
-
-            <div class="cta">
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="">Log In</a></p>
-            </div>
             </form>
-            
-            
+
+
 
         </div>
     </div>
-    
+
 </body>
+
 </html>
